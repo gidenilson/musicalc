@@ -1,0 +1,28 @@
+body{
+  margin: auto;
+}
+.note{
+  text-align: center;
+  font-size: 8em;
+  border: 3px;
+  border-radius: 10px;
+  border-style: inset;
+  width: 150px;
+  height: 150px;
+  margin:auto;
+  transition: background-color 0.3s;
+}
+.note-phantom {
+  color:gray;
+  font-size: 5em;
+  width: 90px;
+  height:90px;
+}
+
+.notes-placeholder{
+  display: flex;
+}
+.vmousemove {
+  background: #AAAAAA;
+  color:#EEEEEE;
+}

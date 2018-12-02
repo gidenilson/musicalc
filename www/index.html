@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Musicalc</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+  <main id="app">
+
+    <div data-role="page">
+      <div data-role="header" data-position="fixed">
+        <h2><i class="fas fa-music"></i> Musicalc</h2>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="notes-placeholder">
+          <div class="note note-phantom">{{ notes[note_a] }}</div>
+          <div class="note" v-bind:class="{ vmousemove : isMoving }">{{ notes[note_b] }}</div>
+          <div class="note note-phantom">{{ notes[note_c] }}</div>
+        </div>
+
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <h1></h1>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
